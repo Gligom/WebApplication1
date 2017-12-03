@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication1.Models
 {
@@ -14,5 +15,8 @@ namespace WebApplication1.Models
         public string ProfilNume { get; set; }
 
         public ICollection<ProfileAnalize> ProfileAnalize { get; set; }
+
+        [NotMapped]
+        public int Test { get; set; }
     }
 }
